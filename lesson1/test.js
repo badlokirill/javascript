@@ -156,26 +156,38 @@ console.log(z);
 var n = 10;
 console.log(++n);
 
-var a = 2; //ширина
-var	b = 4; //длина
-var	c = 5; // высота
-console.log(a > b);
-console.log(a > c);
-console.log(b > a);
-console.log(b > c);
-console.log(c > a);
-console.log(c > b);
+var width = 2; //ширина
+var	length = 4; //длина
+var	height = 5; // высота
+
+var result = width * length * height;
+console.log('Площадь = ' + result);
+
+console.log(width > length && width > height ? 'Ширина - бОльший показатель' : 'Ширина не является бОльшим показателем');
+console.log(length > width && length > height ? 'Длина - бОльший показатель' : 'Длина не является бОльшим показателем)');
+console.log(height > width && height > length ? 'Высота - бОльший показатель' : 'Высота не является бОльшим показателем');
+
+
 
 
 var s = 10*100;
 var x = 15;
 var y = 25;
-var res = s - x*y;
+var res = s%(x*y);
 var result = Math.sqrt(res);
 console.log(res); //25
 console.log(result); 
 
-var sm = 15 * 10;
+var sm = 15 * 100;
 var sm2 = 600;
 var result = sm - sm2;
 console.log(result);
+
+
+// var a = 1;
+
+// console.log(a++); //постфиксная форма инкремента // 1
+// console.log(a)// 2
+// var b = 1;
+// console.log(++b); // префиксная форма инкремента 3
+// console.log(++b); // 3
