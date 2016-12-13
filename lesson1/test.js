@@ -160,7 +160,7 @@ var width = 2; //ширина
 var	length = 4; //длина
 var	height = 5; // высота
 
-var result = width * length * height;
+var result = 2*(width*length + length*height + height*width);
 console.log('Площадь = ' + result);
 
 console.log(width > length && width > height ? 'Ширина - бОльший показатель' : 'Ширина не является бОльшим показателем');
