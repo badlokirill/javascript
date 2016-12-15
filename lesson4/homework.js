@@ -75,7 +75,7 @@ console.log('_________Задание 2.2_______')
   		city1.popul = (city2.population - population) + population;
  }
 
-city1.newpop(400)
+city1.newpop(city1.population)
 console.log(city1.popul)
 
 
@@ -146,27 +146,22 @@ console.log('_________Задание 3_______')
 //если нет, возвращает false
 
 function validateData (data, flag){
-	  //flag == 'number' ||  flag == 'operator';
-	if ( flag == 'number'){
+	if ( flag == 'number') {
 		if (typeof data == 'number'){
 			console.log(+data)
-		}else{
-			return 'Not a number'
-		}
-	}else if (flag == 'operator'){
+			return +data
+		} else { return false}
+	} else if (flag == 'operator') {
 		if (data == '-' || data == '+' || data == '*' || data == '/'){
 			console.log(data)
-		}else{
-			return false
-		}
-	}else{
-		return false
-	}
+			return data
+		} else { return false }
+	} 
  
 }	 
-  console.log(validateData('-','operator'))
+validateData(45,'number')
 
-
+//надо после console.log писать return data
 //можно ли делать два if с однимаргументом в функции?  
 
 
