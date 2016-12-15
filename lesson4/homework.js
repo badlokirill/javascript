@@ -145,32 +145,28 @@ console.log('_________Задание 3_______')
 //если соответствие установлено, возвращает data,
 //если нет, возвращает false
 
-
-function validateData(data, flag){
-	flag == 'number' || 'operator';
-	if(typeof data == 'number'){
-		 data == +data;
-		 console.log(data)
-	}else{
-		return false;
-	}
-
-	if(typeof flag == 'operator'){
-		data 
-	}else if(data == '+'){
-		data
-	}else if(data == '*'){
-		data 
-	}else if(data == '/'){
-		data
+function validateData (data, flag){
+	  //flag == 'number' ||  flag == 'operator';
+	if ( flag == 'number'){
+		if (typeof data == 'number'){
+			console.log(+data)
+		}else{
+			return 'Not a number'
+		}
+	}else if (flag == 'operator'){
+		if (data == '-' || data == '+' || data == '*' || data == '/'){
+			console.log(data)
+		}else{
+			return false
+		}
 	}else{
 		return false
 	}
+ 
+}	 
+  console.log(validateData('-','operator'))
 
-console.log(validateData)
-}
 
-
-validateData('', 45)
+//можно ли делать два if с однимаргументом в функции?  
 
 
