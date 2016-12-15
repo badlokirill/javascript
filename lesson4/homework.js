@@ -97,19 +97,35 @@ console.log('_________Задание 2.4_______')
 
 
 var president = {
-	changeMayor: function (newMayor) {
-			 	
-			city1.mayor = newMayor
-
+	changeMayor: function  (newMayor) {
+			if (city1.mayor == newMayor){
+				console.log(city2.mayor)
+ 
+			}else if(city2.mayor == newMayor){
+				 console.log(city1.mayor)
+			}else{
+			 return false
+			 	}
 			},
+			  
 
 };
-
+ 
 president.changeMayor(city2.mayor)
-console.log(city1.mayor)
+ 
 
+var cityname = {
+	changeName: function (newName){
+		if (city1.name == newName){
+			console.log(city2.name)
+		}else if (city2.name == newName){
+			console.log(city1.name)
+		}else{
+			return false}
+	}
+} 
 
-
+cityname.changeName(city2.name)
 
 console.log('_________Задание 3_______')
 
